@@ -146,7 +146,7 @@ def slice_plot(netin, ax, nodelabels='', timelabels='', communities=None, timeun
         if len(communities.shape) == 1:
             nodekwargs['c'] = np.tile(communities, timeNum)
         else:
-            nodekwargs['c'] = communtiies.flatten(order='F')
+            nodekwargs['c'] = communities.flatten(order='F')
 
     # plt.plot(points)
     # Draw Bezier vectors around egde positions
