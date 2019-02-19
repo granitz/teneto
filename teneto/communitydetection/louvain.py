@@ -7,7 +7,7 @@ from ..utils import process_input, create_supraadjacency_matrix, tnet_to_nx, cle
 from ..classes import TemporalNetwork
 
 
-def temporal_louvain(tnet, resolution=1, intersliceweight=1, n_iter=100, negativeedge='ignore', randomseed=None, consensus_threshold=0.75, temporal_concsensus=True):
+def temporal_louvain(tnet, resolution=1, intersliceweight=1, n_iter=100, negativeedge='ignore', randomseed=None, consensus_threshold=0.75, temporal_consensus=True):
     r"""
     Louvain clustering for a temporal network
 
