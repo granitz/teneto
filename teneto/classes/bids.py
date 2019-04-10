@@ -914,7 +914,6 @@ class TenetoBIDS:
         roi = teneto.utils.make_parcellation(
             f, parcellation, parc_type, parc_params)
         # Make data node,time
-        roi = roi.transpose()
         roi = pd.DataFrame(roi.transpose())
         roi.to_csv(save_dir + save_name + '.tsv', sep='\t')
         sidecar = get_sidecar(f)
